@@ -1,0 +1,30 @@
+//have a string for all the letters of the alphabet
+var abc = “abcdefghijklmnopqrstuvwxyz”
+
+// to initialize it in string at index 1 to start mixing the letters
+// var ii can be changed at any index
+var ii = 1; 
+for (var i = 0; i < abc.length() ; i++)
+ {
+
+	//So long as index does not equal to z, we can mix the letters and print that out 
+	If ( abc[i] != ‘z’) 
+	{
+document.write(abc[i] , “=”  );
+document.write(abc[ii], “<br/>” )
+}
+
+//otherwise, print the last letter which is z, and reset the variables 
+else 
+{
+	   document.write(abc[i] , “=”  );
+   document.write(abc[ii], “<br/>” )
+   var i = 0; 
+   var ii = 1; 
+}
+
+//to continue to move with the index 
+ii ++; 
+}
+
+
